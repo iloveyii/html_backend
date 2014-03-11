@@ -7,7 +7,9 @@
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
         <link type="text/css" rel="stylesheet" href="css/main.css" />
         <link type="text/css" rel="stylesheet" href="css/sb-admin.css" />
-        <link type="text/css" rel="stylesheet" href="css/font-awesome.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
+        <link type="text/css" rel="stylesheet" href="css/index.css" />
+        <link type="text/css" rel="stylesheet" href="css/icons.css" />
     </head>
     <body>
          <!-- Navigation bar with drop down box
@@ -308,7 +310,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Forms</h1>
+                    <h1 class="page-header">SEO Settings</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -317,183 +319,171 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-group"></i>
-                            Basic Form Elements
+                            <i class="fa fa-credit-card"></i>
+                            Edit SEO
                         </div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <label>Text Input</label>
-                                            <input class="form-control">
-                                            <p class="help-block">Example block-level help text here.</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Text Input with Placeholder</label>
-                                            <input placeholder="Enter text" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Static Control</label>
-                                            <p class="form-control-static">email@example.com</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>File input</label>
-                                            <input type="file">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Text area</label>
-                                            <textarea rows="3" class="form-control"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Checkboxes</label>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 1
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 2
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 3
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Inline Checkboxes</label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">1
-                                            </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">2
-                                            </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">3
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Radio Buttons</label>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">Radio 1
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">Radio 2
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" value="option3" id="optionsRadios3" name="optionsRadios">Radio 3
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Inline Radio Buttons</label>
-                                            <label class="radio-inline">
-                                                <input type="radio" checked="" value="option1" id="optionsRadiosInline1" name="optionsRadiosInline">1
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" value="option2" id="optionsRadiosInline2" name="optionsRadiosInline">2
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" value="option3" id="optionsRadiosInline3" name="optionsRadiosInline">3
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Selects</label>
+                                        <div class="form-inline" style="margin-bottom: 15px;">
+                                            <label style="display: block;">Controllers Available</label>
                                             <select class="form-control">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
+                                                <option>company 1</option>
+                                                <option>company 2</option>
+                                                <option>company 3</option>
+                                                <option>company 4</option>
                                             </select>
+                                            <button class="btn btn-success"> Add </button>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Controllers</label>
+                                            <div class="table-responsive table-products">
+                                                <table class="table table-striped table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Name</th>
+                                                        <th>Default SEO ID</th>
+                                                        <th>Edit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Site</td>
+                                                        <td><input placeholder="SEO ID" class="form-control sm-txt"></td>
+                                                        <td>
+                                                            <ul class="actions">
+                                                                <li><i class="table-edit"></i></li>
+                                                                <li class="last"><i class="table-delete"></i></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>User</td>
+                                                        <td><input placeholder="SEO ID" class="form-control sm-txt"></td>
+                                                        <td>
+                                                            <ul class="actions">
+                                                                <li><i class="table-edit"></i></li>
+                                                                <li class="last"><i class="table-delete"></i></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>SEO</td>
+                                                        <td><input placeholder="SEO ID" class="form-control sm-txt"></td>
+                                                        <td>
+                                                            <ul class="actions">
+                                                                <li><i class="table-edit"></i></li>
+                                                                <li class="last"><i class="table-delete"></i></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                    
+                                        <div class="form-inline" style="margin-bottom: 15px;">
+                                            <label for="actions" style="display: block;">Actions Available</label>
+                                            <select name="actions" class="form-control">
+                                                <option>Action 1</option>
+                                                <option>Action 2</option>
+                                                <option>Action 3</option>
+                                                <option>Action 4</option>
+                                            </select>
+                                            <button class="btn btn-success"> Add </button>
                                         </div>
                                         <div class="form-group">
-                                            <label>Multiple Selects</label>
-                                            <select class="form-control" multiple="">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
+                                            <label for="actions">Actions</label>
+                                            <div class="table-responsive table-products">
+                                                <table id="actions" class="table table-striped table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Name</th>
+                                                        <th>Contoller ID</th>
+                                                        <th>SEO ID</th>
+                                                        <th>Edit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Login</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <ul class="actions">
+                                                                <li><i class="table-edit"></i></li>
+                                                                <li class="last"><i class="table-delete"></i></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>User</td>
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                        <td>
+                                                            <ul class="actions">
+                                                                <li><i class="table-edit"></i></li>
+                                                                <li class="last"><i class="table-delete"></i></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>SEO</td>
+                                                        <td>1</td>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <ul class="actions">
+                                                                <li><i class="table-edit"></i></li>
+                                                                <li class="last"><i class="table-delete"></i></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        <button class="btn btn-default" type="submit">Submit Button</button>
-                                        <button class="btn btn-default" type="reset">Reset Button</button>
-                                    </form>
+                                        </div>
+                                        
                                 </div>
+                                
                                 <!-- /.col-lg-6 (nested) -->
+                                
                                 <div class="col-lg-6">
-                                    <h1>Disabled Form States</h1>
+                                    <h3>Enter seo details</h3>
                                     <form role="form">
-                                        <fieldset disabled="">
+                                        <fieldset>
                                             <div class="form-group">
-                                                <label for="disabledSelect">Disabled input</label>
-                                                <input type="text" disabled="" placeholder="Disabled input" id="disabledInput" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="disabledSelect">Disabled select menu</label>
-                                                <select class="form-control" id="disabledSelect">
-                                                    <option>Disabled select</option>
-                                                </select>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox">Disabled Checkbox
-                                                </label>
-                                            </div>
-                                            <button class="btn btn-primary" type="submit">Disabled Button</button>
+                                            <label for="metaTitle">Title</label>
+                                            <input name="metaTitle" placeholder="Enter Title" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="metaTitleSv" placeholder="Enter Title Swedish" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="metaDescription">Meta Description</label>
+                                            <textarea name="metaDescription" placeholder="Enter Meta Description" rows="3" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="metaDescriptionSv" placeholder="Enter Meta Description Swedish" rows="3" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="metaKeywords">Meta Keywords</label>
+                                            <input name="metaKeywords" placeholder="Enter Meta Keywords" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="metaKeywordsSv" placeholder="Enter Meta Keywords Swedish" class="form-control">
+                                        </div>
+                                        <button class="btn btn-default" type="reset">Reset Button</button>
+                                        <button class="btn btn-outline btn-success" type="button">Save</button>
                                         </fieldset>
-                                    </form>
-                                    <h1>Form Validation States</h1>
-                                    <form role="form">
-                                        <div class="form-group has-success">
-                                            <label for="inputSuccess" class="control-label">Input with success</label>
-                                            <input type="text" id="inputSuccess" class="form-control">
-                                        </div>
-                                        <div class="form-group has-warning">
-                                            <label for="inputWarning" class="control-label">Input with warning</label>
-                                            <input type="text" id="inputWarning" class="form-control">
-                                        </div>
-                                        <div class="form-group has-error">
-                                            <label for="inputError" class="control-label">Input with error</label>
-                                            <input type="text" id="inputError" class="form-control">
-                                        </div>
-                                    </form>
-                                    <h1>Input Groups</h1>
-                                    <form role="form">
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon">@</span>
-                                            <input type="text" placeholder="Username" class="form-control">
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon">.00</span>
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-eur"></i>
-                                            </span>
-                                            <input type="text" placeholder="Font Awesome Icon" class="form-control">
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon">$</span>
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon">.00</span>
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-btn">
-                                                <button type="button" class="btn btn-default"><i class="fa fa-search"></i>
-                                                </button>
-                                            </span>
-                                        </div>
                                     </form>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->
@@ -508,7 +498,6 @@
             </div>
             <!-- /.row -->
         </div>
-        
         
         <!-- / Wrapper -->
         
@@ -538,7 +527,6 @@
                     </div>
                 </div>
             </div>
-            
             
         </div>
         
